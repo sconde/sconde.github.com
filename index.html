@@ -19,6 +19,7 @@
 	<li><a href="papers.html" title="Publications">Publications</a></li>
 	<li><a href="teaching.html" title="Teaching">Teaching</a></li>
 	<li><a href="pastActivities.html" title="Past Activities">Past Activities</a></li>
+	<li><a href="gitcodes.html" title="Git Repositories">Git Repositories</a></li>
 <!-- 	<li><a href="others.html" title="Others">Others</a></li> -->
 	</ul>
 	</div>
@@ -64,6 +65,8 @@ MATLAB, Python, C/C++, MPI, CUDA (learning)
 <li> <a href="https://www.xsede.org/xsede-scholars-program">XSEDE Scholars Program Cohort 4</a> </li>
 </ul>
 
+<h2>My Git</h2>
+<div id="github-projects"></div>
 
 <h2>Links</h2>
 <ul>
@@ -72,8 +75,26 @@ MATLAB, Python, C/C++, MPI, CUDA (learning)
   <li><a href="https://bitbucket.org/lilsid89">bitbucket profile</a></li>
 </ul>
 
-    
+<!--
+<h2>My Git</h2>
+<div id="my-github-projects"></div>
+-->
 
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="github.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+        $("#github-projects").loadRepositories("sconde");
+        });
+</script>
 
-
-<link rel="stylesheet" type="text/css" media="screen" href="chrome-extension://fcdjadjbdihbaodagojiomdljhjhjfho/css/atd.css"></body></html>
+<link rel="stylesheet" type="text/css" media="screen" href="chrome-extension://fcdjadjbdihbaodagojiomdljhjhjfho/css/atd.css">
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="github-query.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+                    $("#my-github-projects").loadRepositories("sconde");
+                        });
+</script>
+</body>
+</html>

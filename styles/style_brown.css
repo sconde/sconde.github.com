@@ -78,7 +78,7 @@ a:hover, a:active
 	padding-left:	5px;
 	margin:			0;
 	margin-bottom:	0.4em;
-	color:			#595959;
+	color:			#0a2972;
 	font-size:		240%;
 	font-weight:	bold;
 }
@@ -94,6 +94,7 @@ a:hover, a:active
 	font-weight:	bold;
 	font-family:	Arial,Helvetica,sans-serif;
 	line-height:	1.2em;
+    color: #000000; 
 }
 
 #navigation ul li {
@@ -111,13 +112,13 @@ a:hover, a:active
 	padding-bottom:	0.2em;
 	padding-top:	0.2em;
 	margin:			0;
-	color:			#595959;
+	color:			#F8F8FF;
 	text-decoration:none;
 }
 
 #navigation ul li a:hover, #navigation ul li a:active {
 	background-color:	#595959;
-	color:				#ffffff;
+	color:				#ffd700;
 }
 
 #footer ul {
@@ -198,7 +199,7 @@ p.indented {
 }
 
 .roundedbox-tr {
-	background: #dbdbdb url(roundedbox-tr.png) top right no-repeat;
+	background: #0a2972 url(roundedbox-tr.png) top right no-repeat;
 	margin:		0;
 	padding:	0;
 	width:		100%;
@@ -234,11 +235,10 @@ p.indented {
 }
 
 
-
 a.doi, #sidebar a.doi, #sidebar a.doi:hover
 {	display:			inline;
 	background-color:	#F36E2D;
-	color:				#ffffff;
+	color:				#FFD700;
 	padding:			0px 3px;
 	text-decoration:	none;
 	font-size:			0.9em;
@@ -277,8 +277,8 @@ h2 {
   margin-bottom:	0.9em;
   margin-left:         -0.3em;
   padding:			0.2em 0.3em;
-  background-color: #dbdbdb;
-  color: 			#585858;
+  background-color: #0a2972;
+  color: 			#ffffff;
   font-size:		1.1em;
   font-weight:		bold;
   text-align: 		left;

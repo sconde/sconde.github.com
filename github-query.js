@@ -19,10 +19,15 @@ jQuery.fn.loadRepositories = function(username) {
             //if (this.name == ('nodepy') || this.name == ("nonlinear-waves-course") || this.name == ("SSP_Tools")) {
             if (~listOfRepos.indexOf(this.name)) {
                 list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
-            list.append('<dd>' + this.forks_count + '</dd>');
-            list.append('<dd>' + this.description + '</dd>');
-            list.append('<dd>' + this.created_at + '</dd>');
-            list.append('<dd>' + this.watchers + '</dd>');
+            list.append('<dd> Description: ' + this.description + '</dd>');
+           // list.append('<dd> Created: ' + this.created_at + '</dd>');
+            list.append('<dd> Watchers: ' + this.watchers_count + '</dd>');
+            //list.append('<dd> Size: ' + this.size + '</dd>');
+            list.append('<dd> Open Issues: ' + this.open_issues + '</dd>');
+            list.append('<dd> Open Issues Count: ' + this.open_issues_count + '</dd>');
+            //list.append('<dd> Last Updated: ' + this.updated_at + '</dd>');
+            list.append('<dd> Stars: ' + this.stargazers_count + '</dd>');
+            list.append('<dd> Forks: ' + this.forks_count + '</dd>');
             }
         });
     });

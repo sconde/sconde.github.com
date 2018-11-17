@@ -103,7 +103,7 @@ div.col-sm-3 img.profile-avatar {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  display: block;
+  /*display: block;*/
   margin-left: auto;
   margin-right: auto;
 }

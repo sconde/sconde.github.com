@@ -1,0 +1,53 @@
+title: Curiosity For Knowledge
+description: My Mathematical Exploration
+author: Sidafa Conde
+github: https://github.com/sconde
+about: An insatiable hunger for knowledge
+#disqus_shortname: sidafaconde
+#google_analytics: UA-XXXXXXXX-Y
+avatar_url: /static/img/sconde_avatar.jpeg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-twitter
+      link: "https://twitter.com/SidAfrica89"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/conde89"
+    - icon: fa-github
+      link: "https://github.com/sconde"
+
+share:
+  twitter_username: SidAfrica89
+  #fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    #- text: XML Feed
+      #url: /feed.xml
+
+url: "sconde.github.io"
+baseurl: "/blogs"
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']

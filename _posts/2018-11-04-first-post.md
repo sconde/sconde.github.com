@@ -13,7 +13,7 @@ Back in undergrad (maybe a little in grad school), I used my blog posts as a way
 Similar to many other bloggers who have made the switch, I've acknowledged the advantage of moving to Jekyll:
 
 1. Jekyll allows markdown: I can write all my post in simple markdown and not have to suffer navigating HTML tags
-2. Writing code snippets is very easier in markdown!!
+2. Writing code snippets is very easy in markdown!!
 3. Hosting in Github: free hosting, and of course, having version control is awesome.
 4. [I can include Jupyter Notebooks in Jekyll posts](https://briancaffey.github.io/2016/03/14/ipynb-with-jekyll.html)
 5. [I can deploy R Markdown in Jekyll posts](https://selbydavid.com/2017/06/16/rmarkdown-jekyll/)

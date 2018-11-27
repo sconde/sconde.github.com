@@ -2,7 +2,7 @@
 layout: post
 title:  "Installing ArrayFire"
 date:   2014-12-30 18:34:10 +0700
-categories: [hpc, cuda]
+categories: [python, django]
 ---
 
 [ArrayFire](http://arrayfire.com/) is now opensource!!

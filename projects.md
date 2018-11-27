@@ -1,7 +1,8 @@
 ---
-layout: project
+layout: page
 title: Projects
-permalink: /projects/
+subtitle: What's been eating away my free time
+<!--subtitle: Data Science Explorations-->
 ---
 
-My interesting projects.
+This is a collection of some personal projects

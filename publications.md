@@ -4,6 +4,9 @@ title: Publications
 subtitle: What's been eating away my free time
 ---
 
+## Research Interest
+
+Numerical Analysis, Scientific Computing, HPC and Computational Finance.
 
 ## Publications
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Setup OS X Development environments"
+tags: osx, homebrew
 subtitle: "Development environment set up"
 <!--image: /img/hello_world.jpeg-->
 ---

@@ -6,14 +6,14 @@ subtitle: "Version control"
 <!--image: /img/hello_world.jpeg-->
 ---
 
-Overtime, I've collected a lot of git aliases and adopted some recommended git workflow. This post summarizes how I now use Git for almost everything.
+Overtime, I've collected a lot of git aliases and adopted some recommended git workflow. This post summarizes how I now use git for almost everything.
 
-I track almost all my dot files in configs repo on Github: my [`.gitconfig`](https://github.com/sconde/configs).
+I track almost all my dot files in [a config repo on Github](https://github.com/sconde/configs).
 
 ## Git diff with Matlab package directory
 
-While in grad school, I wrote a lot Matlab code. Ultimately, I attempted to
-unify most of the codes and developed an object-oriented MATLAB "toolbox" for quickly implementing and testing these methods on a set of example problems using a variety of Finite Difference based spatial discretizations including the ENO and WENO.
+While in grad school, I wrote a lot Matlab codes. Ultimately, I attempted to
+unify most of the codes and developed an object-oriented MATLAB "toolbox" for quickly implementing and testing numerical methods on a set of example problems using a variety of Finite Difference based spatial discretizations including the ENO and WENO.
 <!--I used this toolbox to confirm the order of new multi-step, multi-stage SSP methods as well as to investigate other properties.-->
 
 At the time, folders containing class definitions in Matlab had a special character prefix, e.g. `+Dir01/file.m`.
@@ -23,7 +23,7 @@ as
 errr while processing command line Not an editor command +Dir01/file.m
 ```
 
-The following git config, [courtesy of stackoverflow](https://stackoverflow.com/a/37175487/2943424) helped resolve this issue
+The following git alias, [courtesy of stackoverflow](https://stackoverflow.com/a/37175487/2943424) helped resolve this issue
 
 ```bash
 [difftool "vimdiff"]
@@ -32,11 +32,11 @@ The following git config, [courtesy of stackoverflow](https://stackoverflow.com/
 
 ## Working with branches
 
-I now use the [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow):  all feature development should take place in a dedicated branch and not the **master** branch.
-When it comes to integrating the work done in the feature branch, I up for `rebase` approach. There are many who prefers the `merge` approach over `rebase`, and vice versa.
-Similar to the [`vim` vs. `emacs`](https://en.wikipedia.org/wiki/Editor_war), there are those who prefer `merge` over `rebase`. 
-While working on a project with limited number of developers, I prefer rebasing as it preserves a clean project history.
-Given the size of the project/contributors, it's oven easier for me to maintain the conflicts.
+I now use the [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow):  all feature development take place in a dedicated branch and not the **master** branch.
+When it comes to integrating the feature branch into **master**, I up for the `rebase` approach. There are many who prefers the `merge` approach over `rebase`, and vice versa.
+<!--Similar to the [`vim` vs. `emacs`](https://en.wikipedia.org/wiki/Editor_war), there are those who prefer `merge` over `rebase`. -->
+While working on a moderate-sized project, I prefer rebasing as it preserves a clean project history.
+<!--Given the size of the project/contributors, it's oven easier for me to maintain the conflicts.-->
 I have in my `.gitconfig` the following alias:
 ```bash
 rb = !git branch before-rebase-$(date +"%A-%F-%H_%M")-$(git rev-parse --abbrev-ref HEAD) && git rebase

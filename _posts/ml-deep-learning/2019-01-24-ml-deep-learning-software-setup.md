@@ -136,3 +136,9 @@ print("Pytorch CUDA is Good!!")
 $ python test_torch_cuda.py
 Pytorch CUDA is Good!!
 ```
+
+## Update 
+
+Lately I've been having issue with this installation procedure. Specially with `tensorflow-dataset`. Perhaps it's due to `TF 2.0`.
+
+Anyway, [PyTorch locally is pretty nifty.](https://pytorch.org/get-started/locally/)

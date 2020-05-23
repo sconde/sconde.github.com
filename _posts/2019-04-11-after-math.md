@@ -3,6 +3,7 @@ layout: post
 title: "Umass Dartmouth: AfterMath"
 subtitle: "return to UMD corsair"
 <!--image: /img/hello_world.jpeg-->
+tags: LES, CFD, Research
 ---
 
 I spent nearly 10 years at Umass Dartmouth - dual B.S. in computational math and Accounting; Ph.D. in EAS, Computational Science and Engineering.

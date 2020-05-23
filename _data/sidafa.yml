@@ -175,14 +175,12 @@ projects:
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+      What's been eating away my free time
     papers:
       - title: A linear energy stable scheme for a thin film model without slope selection
         link: "#"
-        authors: Sidafa Conde
-        conference: Addison-Wesley, 1968
+        authors:  Wenbin Chen, Sidafa Conde, Cheng Wang, Xiaoming Wang, Steven M. Wise
+        conference: Journal of Scientific Computing. 52(3), 546–562 (2012).
 
 skills:
     title: Skills &amp; Proficiency

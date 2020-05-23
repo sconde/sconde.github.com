@@ -17,4 +17,3 @@ layout: testresume
 
 {% include publications_cv.html %}
 
-{% include skills_cv.html %}

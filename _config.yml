@@ -26,6 +26,7 @@ description: "Blog: Expanding Mental Horizon Blog"
 navbar-links:
   About Me: "aboutme"
   #Projects: "projects"
+  Test Resume: "testresume"
   Science:
       - Past Activities: "pastactivities"
       - Publications: "publications"

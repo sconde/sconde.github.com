@@ -24,9 +24,9 @@ description: "Blog: Expanding Mental Horizon Blog"
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  #About Me: "aboutme"
   #Projects: "projects"
-  Test Resume: "testresume"
+  About Me: "resume"
   Science:
       - Past Activities: "pastactivities"
       - Publications: "publications"
@@ -75,10 +75,10 @@ author:
 social-network-links:
   #rss: true
   #email: "sconde89@gmail.com"
-  github: sconde
-  twitter: sidAfrica89
-  linkedin: conde89
-  google-scholar: 18XxycAAAAAJ
+  #github: sconde
+  #twitter: sidAfrica89
+  #linkedin: conde89
+  #google-scholar: 18XxycAAAAAJ
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  xing: yourname
@@ -219,6 +219,12 @@ prose:
           element: "textarea"
           label: "Subtitle"
           placeholder: "A description of your post."
+          alterable: true
+      - name: "data"
+        field:
+          element: "textarea"
+          label: "data"
+          placeholder: "data"
           alterable: true
       - name: "date"
         field:

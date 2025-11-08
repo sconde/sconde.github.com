@@ -5,6 +5,7 @@
 sidebar:
     about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
+    languages: False # set to False to hide languages section
 
     # Profile information
     name: Sidafa Conde
@@ -12,26 +13,40 @@ sidebar:
     avatar: sconde.JPG  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: 
+    email:
     phone:
-    website: sconde.github.io #do not add http://
+    website: #sconde.github.io #do not add http://
     linkedin: conde89
     github: sconde
     gitlab:
     bitbucket:
-    twitter: '@kirikoumath'
+    twitter: #'@kirikoumath'
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
+    google-scholar: 18XxycAAAAAJ
 
     languages:
-      - idiom: English
-        level: Native
-
-      - idiom: French
-        level: Professional
 
     interests:
+      - item: ML/AI performance optimization
+        link:
+
+      - item: GPU computing (CUDA, ROCm/HIP)
+        link:
+
+      - item: Large language models
+        link:
+
+      - item: Distributed training
+        link:
+
+      - item: Scientific machine learning
+        link:
+
+      - item: Kernel profiling & analysis
+        link:
+
       - item: Soccer
         link:
 
@@ -41,47 +56,36 @@ sidebar:
 career-profile:
     title: About Me
     summary: |
-        I do a lot of self-learning. I'm online educated. I'm a tinkerer. I'm a builder. If I want to figure out how to do something, I build it!
-        
-        I’m Generally a curious person - always seeking to learn new things and meet intellectual people.
-        My purpose is self improvement.
-        I found that I'm the happiest when I can learn new things and then apply them in practice or teach them to others.
-        In my limited free time, I am learning more about coding, IoT and A.I.
+        I'm a computational scientist. I'm a tinkerer. I'm a builder. If I want to figure out how to do something, I build it.
+
+        In 2010, I built an OpenMPI cluster in my friend's basement. Since then I've worked on time integration methods for plasma simulations, parallel algorithms for HPC systems, scientific machine learning, and ML/AI performance optimization.
+
+        I work in HPC and ML/AI optimization - training, inference, and all-around performance optimization. I get to combine mathematics, computational methods, and solving hard problems. I'm interested in using AI and machine learning to transform big data into real-world solutions.
+
+        I do a lot of self-learning. I'm online educated. I'm generally a curious person - always seeking to learn new things and meet intellectual people. My purpose is self improvement.
+
+        I'm happiest when I can learn something new and then apply it in practice or teach it to others. That's why I keep this blog: to document what I learn and share it with anyone who might find it useful.
+
+        The most important work I do isn't in any paper or codebase. It's my involvement with [STEAM the Streets](http://bigpictureanthems.com/steam-the-streets/). We inspire and activate underrepresented youth to pursue STEM and STEAM career pathways. I grew up in Fall River, MA. I know firsthand how important it is for kids from underrepresented backgrounds to see that they belong in these fields and to have people who can show them the way.
 
 education:
-    - degree: PhD Computational Science & Engineeing
-      university: Umass Dartmouth
-      time: 2012 - 2017
+    - degree: PhD Engineering and Applied Science
+      university: UMass Dartmouth
+      time: 2012
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        Focus: Computational Science and Engineering
+
     - degree: BSc Computational Mathematics
-      university: Umass Dartmouth
-      time: 2007 - 2012
+      university: UMass Dartmouth
+      time: 2012
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        Focus: Computational Mathematics
+
     - degree: BSc Accounting
-      university: Umass Dartmouth
-      time: 2007 - 2012
+      university: UMass Dartmouth
+      time: 2012
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        Focus: Accounting Information Systems
 experiences:
     - role: Senior Memmber of Technical Staff
       time: 2019 - Present
@@ -175,11 +179,11 @@ projects:
 publications:
     title: Publications
     intro: |
-      What's been eating away my free time
+      For a complete list of publications, visit my [Google Scholar profile](https://scholar.google.com/citations?user=18XxycAAAAAJ&hl=en).
     papers:
       - title: A linear energy stable scheme for a thin film model without slope selection
-        link: "#"
-        authors:  Wenbin Chen, Sidafa Conde, Cheng Wang, Xiaoming Wang, Steven M. Wise
+        link: "https://link.springer.com/article/10.1007/s10915-011-9559-2"
+        authors: Wenbin Chen, Sidafa Conde, Cheng Wang, Xiaoming Wang, Steven M. Wise
         conference: Journal of Scientific Computing. 52(3), 546–562 (2012).
 
 skills:

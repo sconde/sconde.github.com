@@ -1,0 +1,125 @@
+{
+	"name": "Jekyll Blog Development",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+
+	// Container user configuration (non-root for security)
+	"remoteUser": "devuser",
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+
+	// Port forwarding for Jekyll development
+	"forwardPorts": [
+		4000,  // Jekyll server
+		35729  // LiveReload
+	],
+	"portsAttributes": {
+		"4000": {
+			"label": "Jekyll Server",
+			"onAutoForward": "notify"
+		},
+		"35729": {
+			"label": "LiveReload",
+			"onAutoForward": "silent"
+		}
+	},
+
+	// VSCode customizations
+	"customizations": {
+		"vscode": {
+			// Editor settings optimized for Jekyll development
+			"settings": {
+				// Ruby configuration
+				"ruby.intellisense": "rubyLocate",
+				"ruby.format": "rubocop",
+				"ruby.lint": {
+					"rubocop": true
+				},
+
+				// Markdown settings
+				"[markdown]": {
+					"editor.wordWrap": "on",
+					"editor.quickSuggestions": {
+						"comments": "on",
+						"strings": "on",
+						"other": "on"
+					},
+					"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+				},
+
+				// YAML frontmatter settings
+				"[yaml]": {
+					"editor.insertSpaces": true,
+					"editor.tabSize": 2,
+					"editor.autoIndent": "advanced"
+				},
+
+				// File associations for Jekyll
+				"files.associations": {
+					"*.html": "html",
+					"*.md": "markdown"
+				},
+
+				// Git configuration
+				"git.autofetch": true,
+				"git.enableSmartCommit": true,
+
+				// Terminal settings
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.scrollback": 10000
+			},
+
+			// Extensions to install in the container
+			"extensions": [
+				// Ruby development
+				"Shopify.ruby-lsp",
+				"KoichiSasada.vscode-rdbg",
+
+				// Markdown and documentation
+				"DavidAnson.vscode-markdownlint",
+				"yzhang.markdown-all-in-one",
+
+				// Jekyll-specific
+				"ginfuru.vscode-jekyll-snippets",
+
+				// YAML support
+				"redhat.vscode-yaml",
+
+				// Git integration
+				"eamodio.gitlens",
+
+				// Liquid template support
+				"sissel.shopify-liquid",
+
+				// General utilities
+				"EditorConfig.EditorConfig"
+			]
+		}
+	},
+
+	// Lifecycle hooks
+	"postCreateCommand": {
+		"bundle": "bundle install --retry 5 --jobs 20"
+	},
+
+	"postAttachCommand": "bundle exec jekyll serve --host 0.0.0.0 --livereload --incremental",
+
+	// Container features
+	// Note: Removed git/git-lfs features - incompatible with Alpine (require apt-get)
+	// Git and Git-LFS already installed via apk in Dockerfile
+	"features": {},
+
+	// Resource limits and capabilities
+	"runArgs": [
+		"--init",
+		"--security-opt=no-new-privileges"
+	],
+
+	// Mount configuration
+	"mounts": [
+		// Persistent gem cache for faster rebuilds
+		"source=jekyll-blog-gems,target=/usr/local/vendor,type=volume"
+	]
+}

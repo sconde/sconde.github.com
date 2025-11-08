@@ -23,7 +23,10 @@
     {% include education_cv.html %}
   {% endif %}
 
-  {% include language_cv.html %}
+  {% if sidebar.languages %}
+    {% include language_cv.html %}
+  {% endif %}
+
   {% include interests_cv.html %}
 
   {% if sidebar.about %}

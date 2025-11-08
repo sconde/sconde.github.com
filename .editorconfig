@@ -1,0 +1,50 @@
+# EditorConfig for Jekyll Blog
+# https://editorconfig.org
+
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Markdown files (allow trailing spaces for line breaks)
+[*.md]
+trim_trailing_whitespace = false
+indent_size = 2
+
+# YAML files (Jekyll config, frontmatter)
+[*.{yml,yaml}]
+indent_size = 2
+
+# Ruby files
+[*.rb]
+indent_size = 2
+
+# HTML and Liquid templates
+[*.{html,liquid}]
+indent_size = 2
+
+# CSS and SCSS
+[*.{css,scss,sass}]
+indent_size = 2
+
+# JavaScript
+[*.js]
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+indent_style = tab
+
+# Makefiles
+[Makefile]
+indent_style = tab

@@ -1,0 +1,27 @@
+{
+	"recommendations": [
+		// Ruby development
+		"shopify.ruby-lsp",
+		"koichisasada.vscode-rdbg",
+
+		// Markdown and documentation
+		"davidanson.vscode-markdownlint",
+		"yzhang.markdown-all-in-one",
+
+		// Jekyll-specific tools
+		"ginfuru.vscode-jekyll-snippets",
+
+		// Liquid template language
+		"sissel.shopify-liquid",
+
+		// YAML support (for frontmatter)
+		"redhat.vscode-yaml",
+
+		// Git integration
+		"eamodio.gitlens",
+
+		// EditorConfig support
+		"editorconfig.editorconfig"
+	],
+	"unwantedRecommendations": []
+}

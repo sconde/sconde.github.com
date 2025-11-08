@@ -1,0 +1,119 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Serve Jekyll",
+			"type": "shell",
+			"command": "bundle exec jekyll serve --host 0.0.0.0 --livereload --incremental",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"focus": false,
+				"clear": true
+			},
+			"isBackground": true,
+			"runOptions": {
+				"instanceLimit": 1
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "Build Jekyll (Production)",
+			"type": "shell",
+			"command": "JEKYLL_ENV=production bundle exec jekyll build",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared",
+				"focus": false,
+				"clear": true
+			},
+			"group": "build"
+		},
+		{
+			"label": "Clean Jekyll Build",
+			"type": "shell",
+			"command": "bundle exec jekyll clean",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "silent",
+				"panel": "shared",
+				"clear": true
+			}
+		},
+		{
+			"label": "Bundle Install",
+			"type": "shell",
+			"command": "bundle install --retry 5 --jobs 20",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared",
+				"focus": true,
+				"clear": true
+			}
+		},
+		{
+			"label": "Bundle Update",
+			"type": "shell",
+			"command": "bundle update",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared",
+				"focus": true,
+				"clear": true
+			}
+		},
+		{
+			"label": "Create New Post",
+			"type": "shell",
+			"command": "echo '---\nlayout: post\ntitle: \"${input:postTitle}\"\nsubtitle: \"${input:postSubtitle}\"\ndate: $(date +%Y-%m-%d)\ntags: [${input:postTags}]\n---\n\n' > _posts/$(date +%Y-%m-%d)-${input:postSlug}.md && code _posts/$(date +%Y-%m-%d)-${input:postSlug}.md",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "silent",
+				"panel": "shared"
+			}
+		},
+		{
+			"label": "Check Jekyll Doctor",
+			"type": "shell",
+			"command": "bundle exec jekyll doctor",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared",
+				"focus": false,
+				"clear": true
+			}
+		}
+	],
+	"inputs": [
+		{
+			"id": "postTitle",
+			"type": "promptString",
+			"description": "Post title"
+		},
+		{
+			"id": "postSubtitle",
+			"type": "promptString",
+			"description": "Post subtitle (optional)",
+			"default": ""
+		},
+		{
+			"id": "postSlug",
+			"type": "promptString",
+			"description": "URL slug (lowercase, hyphens only)"
+		},
+		{
+			"id": "postTags",
+			"type": "promptString",
+			"description": "Tags (comma-separated)",
+			"default": ""
+		}
+	]
+}

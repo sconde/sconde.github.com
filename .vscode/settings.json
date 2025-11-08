@@ -1,0 +1,23 @@
+{
+	// File associations for Jekyll
+	"files.associations": {
+		"*.html": "html",
+		"*.md": "markdown"
+	},
+
+	// Exclude build artifacts from search and file tree
+	"files.exclude": {
+		"**/.jekyll-cache": true,
+		"**/.sass-cache": true,
+		"_site": true
+	},
+
+	// Search configuration
+	"search.exclude": {
+		"**/.jekyll-cache": true,
+		"**/.sass-cache": true,
+		"_site": true,
+		"**/vendor": true,
+		"Gemfile.lock": true
+	}
+}

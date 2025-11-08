@@ -11,9 +11,5 @@ layout: testresume
 
 {% include career-profile_cv.html data_name=data-name %}
 
-{% include experiences_cv.html %}
-
 {% include projects_cv.html %}
-
-{% include publications_cv.html %}
 

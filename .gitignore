@@ -3,3 +3,11 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Bundler
+Gemfile.lock
+.bundle/
+vendor/
+
+# VS Code devcontainer
+.devcontainer/.bash_history
